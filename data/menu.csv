@@ -1,0 +1,21 @@
+id,name,category,description,price_usd,price_khr,image_url,label,available,sort_order
+margherita,Margherita,Neapolitan pizza,"Tomato, fior di latte, fresh basil & extra virgin olive oil.",10.00,40000,,Classico,TRUE,10
+funghi,Funghi,Neapolitan pizza,"Roasted mushrooms, fior di latte, thyme & aged parmesan.",12.00,48000,,,TRUE,20
+frutti-di-mare,Frutti di Mare,Neapolitan pizza,"Prawns, squid, mussels, tomato, garlic & parsley.",16.00,64000,,,TRUE,30
+diavola,Diavola,Neapolitan pizza,"Spicy salami, tomato, fior di latte & fresh chilli.",13.00,52000,,,TRUE,40
+quattro-formaggi,Quattro Formaggi,Neapolitan pizza,"Fior di latte, gorgonzola, parmesan & taleggio on a white base.",14.00,56000,,,TRUE,50
+prosciutto-rucola,Prosciutto e Rucola,Neapolitan pizza,"Prosciutto, rocket, tomato, fior di latte & shaved parmesan.",15.00,60000,,,TRUE,60
+burrata,Burrata & Heirloom Tomato,Antipasti,"Creamy burrata, ripe tomatoes, basil & aged balsamic.",9.00,36000,,,TRUE,70
+calamari,Crisp Calamari,Antipasti,"Golden calamari, lemon & Kampot pepper aioli.",8.00,32000,,,TRUE,80
+olive,Marinated Olives,Antipasti,"Mixed olives with citrus peel, rosemary & olive oil.",4.00,16000,,,TRUE,90
+tiramisu,Tiramisù,Dolci,"Espresso-soaked savoiardi, mascarpone & cocoa.",6.00,24000,,,TRUE,100
+panna-cotta,Vanilla Panna Cotta,Dolci,"Silky vanilla cream with passion fruit & toasted coconut.",6.00,24000,,,TRUE,110
+kep-negroni,Kep Negroni,Cocktails,"Gin, bitter aperitivo, sweet vermouth & an orange twist.",9.00,36000,,Bitter & elegant,TRUE,120
+kampot-gimlet,Kampot Gimlet,Cocktails,"Gin, fresh lime & a fragrant Kampot pepper cordial.",9.00,36000,,,TRUE,130
+coastal-paloma,Coastal Paloma,Cocktails,"Tequila, pink grapefruit, lime & soda with a sea-salt rim.",10.00,40000,,,TRUE,140
+passionfruit-martini,Passion Fruit Martini,Cocktails,"Vodka, passion fruit, vanilla & lime.",10.00,40000,,,TRUE,150
+espresso-martini,Espresso Martini,Cocktails,"Vodka, coffee liqueur & freshly pulled espresso.",9.00,36000,,,TRUE,160
+aperol-spritz,Aperol Spritz,Cocktails,"Aperol, prosecco, soda & fresh orange.",8.00,32000,,,TRUE,170
+lemongrass-fizz,Lemongrass Fizz,Without spirits,"Lemongrass, lime, ginger & soda over ice.",5.00,20000,,Alcohol-free,TRUE,180
+passion-cooler,Passion Fruit Cooler,Without spirits,"Passion fruit, mint, fresh lime & sparkling water.",5.00,20000,,,TRUE,190
+espresso,Espresso,Without spirits,A short espresso to finish the evening.,3.00,12000,,,TRUE,200

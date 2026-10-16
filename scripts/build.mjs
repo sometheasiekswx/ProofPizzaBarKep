@@ -10,6 +10,8 @@ if (configured) {
   const csv = await response.text();
   if (csv.length > 1000000) throw new Error('Menu CSV exceeds 1 MB');
   items = menuFromCSV(csv);
+} else {
+  items = menuFromCSV(await readFile('data/menu.csv', 'utf8'));
 }
 const html = await readFile('index.html', 'utf8');
 await rm('dist', { recursive: true, force: true });
@@ -18,5 +20,5 @@ for (const file of ['styles.css', 'app.js']) await cp(file, `dist/${file}`);
 await cp('assets', 'dist/assets', { recursive: true });
 await writeFile('dist/index.html', html);
 await writeFile('dist/.nojekyll', '');
-await writeFile('dist/data/menu.json', JSON.stringify({ configured, updatedAt: new Date().toISOString(), items }, null, 2));
-console.log(`Built site with ${items.length} available menu items. Sheets ${configured ? 'connected' : 'not configured; showing contact message'}.`);
+await writeFile('dist/data/menu.json', JSON.stringify({ configured, source: configured ? 'google-sheets' : 'local-csv', updatedAt: new Date().toISOString(), items }, null, 2));
+console.log(`Built site with ${items.length} available menu items. Sheets ${configured ? 'connected' : 'not configured; using data/menu.csv'}.`);

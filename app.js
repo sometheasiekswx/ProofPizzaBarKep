@@ -16,7 +16,7 @@ function render(category = null) {
   grid.replaceChildren();
   const visible = items.filter(item => category === null || item.category === category);
   for (const item of visible) {
-    const card = element('article', 'dish');
+    const card = element('article', item.image_url ? 'dish' : 'dish dish-text');
     const imageBox = element('div', 'dish-image');
     const image = element('img');
     image.src = item.image_url || 'assets/proof-alternative.jpg';
@@ -30,7 +30,9 @@ function render(category = null) {
     const price = element('div', 'price', money.format(item.price_usd));
     price.append(element('small', '', `៛${riel.format(item.price_khr)}`));
     heading.append(element('h3', '', item.name), price);
-    card.append(imageBox, heading, element('p', '', item.description));
+    if (item.image_url) card.append(imageBox);
+    card.append(element('div', 'dish-category', item.category), heading, element('p', '', item.description));
+    if (!item.image_url && item.label) card.append(element('span', 'dish-label', item.label));
     grid.append(card);
   }
   status.textContent = `${visible.length} ${visible.length === 1 ? 'item' : 'items'}${category ? ` · ${category}` : ''}. Prices in US dollars and Cambodian riel.`;
@@ -45,6 +47,7 @@ async function loadMenu() {
     const data = await response.json();
     if (!Array.isArray(data.items)) throw new Error('Invalid menu');
     items = data.items;
+    document.querySelector('#menu-draft-note').hidden = data.source !== 'local-csv';
     if (!items.length) {
       status.textContent = 'Our latest menu is available directly from the team. Message us on Instagram for dishes, prices, and availability.';
       return;
