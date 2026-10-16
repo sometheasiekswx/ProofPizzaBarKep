@@ -52,16 +52,20 @@ async function loadMenu() {
       status.textContent = 'Our latest menu is available directly from the team. Message us on Instagram for dishes, prices, and availability.';
       return;
     }
-    for (const category of [null, ...new Set(items.map(item => item.category))]) {
-      const button = element('button', 'filter', category ?? 'All favourites');
+    // Get unique categories, excluding null
+    const categories = [...new Set(items.map(item => item.category))];
+    for (const category of categories) {
+      const button = element('button', 'filter', category);
       button.type = 'button';
-      button.setAttribute('aria-pressed', String(category === null));
+      button.setAttribute('aria-pressed', String(false));
       button.addEventListener('click', () => {
         filters.querySelectorAll('button').forEach(other => other.setAttribute('aria-pressed', String(other === button)));
         render(category);
       });
       filters.append(button);
     }
+    // Show all items by default
+    render(null);
     render();
   } catch {
     grid.replaceChildren();

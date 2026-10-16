@@ -16,6 +16,6 @@ coastal-paloma,Coastal Paloma,Cocktails,"Tequila, pink grapefruit, lime & soda w
 passionfruit-martini,Passion Fruit Martini,Cocktails,"Vodka, passion fruit, vanilla & lime.",10.00,40000,,,TRUE,150
 espresso-martini,Espresso Martini,Cocktails,"Vodka, coffee liqueur & freshly pulled espresso.",9.00,36000,,,TRUE,160
 aperol-spritz,Aperol Spritz,Cocktails,"Aperol, prosecco, soda & fresh orange.",8.00,32000,,,TRUE,170
-lemongrass-fizz,Lemongrass Fizz,Without spirits,"Lemongrass, lime, ginger & soda over ice.",5.00,20000,,Alcohol-free,TRUE,180
-passion-cooler,Passion Fruit Cooler,Without spirits,"Passion fruit, mint, fresh lime & sparkling water.",5.00,20000,,,TRUE,190
-espresso,Espresso,Without spirits,A short espresso to finish the evening.,3.00,12000,,,TRUE,200
+lemongrass-fizz,Lemongrass Fizz,Wine,"Lemongrass, lime, ginger & soda over ice.",5.00,20000,,Alcohol-free,TRUE,180
+passion-cooler,Passion Fruit Cooler,Wine,"Passion fruit, mint, fresh lime & sparkling water.",5.00,20000,,,TRUE,190
+espresso,Espresso,Wine,A short espresso to finish the evening.,3.00,12000,,,TRUE,200
