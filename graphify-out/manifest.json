@@ -1,0 +1,80 @@
+{
+  "app.js": {
+    "mtime": 1792187419.326228,
+    "seen": 1792213086.8215811,
+    "ast_hash": "3201383bd0f83fb10857ba546d58cdba",
+    "semantic_hash": "3201383bd0f83fb10857ba546d58cdba"
+  },
+  "package.json": {
+    "mtime": 1792212195.9445543,
+    "seen": 1792213086.821584,
+    "ast_hash": "2c0c323f36de792063cd0550da5ea563",
+    "semantic_hash": "2c0c323f36de792063cd0550da5ea563"
+  },
+  "scripts/build.mjs": {
+    "mtime": 1792183878.1197674,
+    "seen": 1792213086.821586,
+    "ast_hash": "d441c4f2cd97af82008cb249a36fd0f5",
+    "semantic_hash": "d441c4f2cd97af82008cb249a36fd0f5"
+  },
+  "scripts/menu.mjs": {
+    "mtime": 1792182827.9386415,
+    "seen": 1792213086.821586,
+    "ast_hash": "7f1ab6c3fc27e12b4e31bebe2d464c96",
+    "semantic_hash": "7f1ab6c3fc27e12b4e31bebe2d464c96"
+  },
+  "scripts/serve.mjs": {
+    "mtime": 1792182897.0726428,
+    "seen": 1792213086.8215868,
+    "ast_hash": "c785a2083a8f243cb307169f952d6003",
+    "semantic_hash": "c785a2083a8f243cb307169f952d6003"
+  },
+  "tests/build.test.mjs": {
+    "mtime": 1792184660.236142,
+    "seen": 1792213086.8215868,
+    "ast_hash": "d245fb6c40b922721a8e1a015ca265fe",
+    "semantic_hash": "d245fb6c40b922721a8e1a015ca265fe"
+  },
+  "tests/menu.test.mjs": {
+    "mtime": 1792182924.348366,
+    "seen": 1792213086.821588,
+    "ast_hash": "6ba1ee83a5a7f6d059ecbb3c63c82b97",
+    "semantic_hash": "6ba1ee83a5a7f6d059ecbb3c63c82b97"
+  },
+  ".github/copilot-instructions.md": {
+    "mtime": 1792212223.9261696,
+    "seen": 1792213086.821588,
+    "ast_hash": "ec2dc0dc7bef63488889f34de2f5584d",
+    "semantic_hash": "ec2dc0dc7bef63488889f34de2f5584d"
+  },
+  ".github/workflows/deploy.yml": {
+    "mtime": 1792182888.3690557,
+    "seen": 1792213086.821589,
+    "ast_hash": "c46cd5f9f5850bcae31639692917a5d8",
+    "semantic_hash": "c46cd5f9f5850bcae31639692917a5d8"
+  },
+  "README.md": {
+    "mtime": 1792184675.6696174,
+    "seen": 1792213086.821589,
+    "ast_hash": "8310dfe1b943d5b41b68425c6a00fd3e",
+    "semantic_hash": "8310dfe1b943d5b41b68425c6a00fd3e"
+  },
+  "index.html": {
+    "mtime": 1792211717.698294,
+    "seen": 1792213086.82159,
+    "ast_hash": "119131f9b1b6b1d41d1e4cf9ec785251",
+    "semantic_hash": "119131f9b1b6b1d41d1e4cf9ec785251"
+  },
+  "assets/proof-alternative.jpg": {
+    "mtime": 1792181436.76062,
+    "seen": 1792213086.82159,
+    "ast_hash": "46308a5cabf7832fed892ae04caba6d6",
+    "semantic_hash": "46308a5cabf7832fed892ae04caba6d6"
+  },
+  "assets/proof-original.png": {
+    "mtime": 1792185338.8021142,
+    "seen": 1792213086.8215911,
+    "ast_hash": "b7ee024f2b9a7211ced9255ccd8d5bc6",
+    "semantic_hash": "b7ee024f2b9a7211ced9255ccd8d5bc6"
+  }
+}

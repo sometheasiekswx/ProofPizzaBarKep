@@ -54,19 +54,19 @@ async function loadMenu() {
     }
     // Get unique categories, excluding null
     const categories = [...new Set(items.map(item => item.category))];
+    const defaultCategory = categories[0] ?? null;
     for (const category of categories) {
       const button = element('button', 'filter', category);
       button.type = 'button';
-      button.setAttribute('aria-pressed', String(false));
+      button.setAttribute('aria-pressed', String(category === defaultCategory));
       button.addEventListener('click', () => {
         filters.querySelectorAll('button').forEach(other => other.setAttribute('aria-pressed', String(other === button)));
         render(category);
       });
       filters.append(button);
     }
-    // Show all items by default
-    render(null);
-    render();
+    // Default to first category (Neapolitan pizza)
+    render(defaultCategory);
   } catch {
     grid.replaceChildren();
     status.textContent = 'The menu could not be loaded. Please try again or message us on Instagram.';
